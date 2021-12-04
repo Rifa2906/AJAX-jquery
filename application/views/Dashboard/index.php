@@ -74,6 +74,9 @@
 
                 if (data['status'] == 1) {
                     $("#form").modal('hide');
+                    $("[name='nim']").val('');
+                    $("[name='nama']").val('');
+                    $("[name='jurusan']").val('');
                     $("#berhasil").html(data['message']);
                     ambilData();
                 } else if (data['status'] == 0) {
