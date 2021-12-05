@@ -14,7 +14,7 @@ class Mahasiswa extends CI_Controller
     {
         $data['title'] = "Data Mahasiswa";
         $this->load->view('templates/header');
-        $this->load->view('Dashboard/index', $data);
+        $this->load->view('Mahasiswa/index', $data);
         $this->load->view('templates/footer');
     }
 
